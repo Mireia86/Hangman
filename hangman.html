@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HANGMAN</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="hangman.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<div class="contain">
+					<div class="row_Write">
+						<!--<div class="col-md-1"></div>-->
+						<div class="col-md-12_Write">
+							<h3 class="wordsGuess"></h3>
+						</div>	
+						<!--<div class="col-md-1"></div>-->
+					</div>		
+					<div class="row_bottom">				
+						<!--<div class="col-md-1"></div>-->
+						<div class="col-md-12_bottom">
+							<input type="text" id="youWrite" class="spaceWrite" maxlength="1" ="" placeholder="Escribe aqui tu letra..." autofocus></input>
+						<!-- </div>
+						<div class="col-md-2_search"> -->
+							<button class="search">SEARCH</button>
+						<!-- </div>
+						<div class="col-md-2"> -->	
+							<button class="newGame" value="Nuevo juego" onclick="location.reload()">NEW GAME </button>
+						<!-- </div>	
+						<div class="col-md-2"> -->	
+							<button class="Start" value="Start">START</button>
+						</div>
+						<!--<div class="col-md-1"></div>-->
+					</div>	
+					<div class="row_fakes">		
+						<div class="col-md-12">
+							<div class="letterUsed">	
+								<p class="fakes"><br> Fallos </p>
+								<p> Letras usadas: <span class="letter"> </span></p>
+							</div>
+						</div>	
+						
+					</div>		
+						</div>	
+								
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+		</div>		
+	</div>
+
+	<script type="text/javascript" src="hangmanOk.js"></script>
+</body>
+</html>
